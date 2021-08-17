@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'DashboardApp';
+  sidebarOpen = true;
+
+  ngOnInit() {}
+  sideBartoggle()
+  {
+    this.sidebarOpen = !this.sidebarOpen;
+  }
 }
